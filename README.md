@@ -40,20 +40,19 @@ To use this interactive calculator script, from the /Foo directory of this repo,
 
 ## Testing and further work
 
-Further additions to the foo physics parameterization can be expanded in the calc_functions.py file or by adding new files.
-Be sure to add anymore new functions to the __init__.py file.
+Further additions to the foo physics parameterization can be expanded in the calc_functions.py file or by adding new files. Be sure to add anymore new functions to the import in the \_\_init\_\_.py file so they get initialized.
 
-For testing these functions, the ./tests folder contains unit tests for the functions.
+For testing these functions, the ./tests folder contains unit tests for the functions. More tests can be added as more Foo physics additions are made.
 
 To run unit tests for the sphere functions, from the /Foo dir, run:
 ```python .\tests\test_sphere_calc_unittest.py```
 
 If all tests ran correctly, the expected result should show "OK".
 
-More tests can be added as more Foo physics additions are made.
-
 ## References
 
 As a refresher for how python packages are built, [this tutorial link](https://www.tutorialspoint.com/python/python_packages.htm) was used and can be used whenever developers want to add new science features.
 
 For the interactive calculaor script, [this article](https://www.geeksforgeeks.org/make-simple-calculator-using-python/) was used for inspiration.
+
+The unit testing reference used for the basics was [here](https://realpython.com/python-testing/).
