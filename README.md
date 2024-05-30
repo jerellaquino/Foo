@@ -31,7 +31,8 @@ From the command line, run:
 
 See the ./scripts folder for examples how the package's functions can be imported and called upon.
 
-A interactive foo calculator can be  command line, from the /Foo root directory, run:
+An interactive foo calculator can be ran command line.
+To use it, from the /Foo root directory, run:
 ``` python .\scripts\ineteractive_foo_calc.py ```
 
 ## References
