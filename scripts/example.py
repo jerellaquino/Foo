@@ -1,5 +1,4 @@
-# Examples of how to test importing functions and using them
-# tests for foo calc functions
+# Examples of how to import functions and using them
 
 from foo import sphereVolume, sphereSA
 

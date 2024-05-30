@@ -27,10 +27,12 @@ From the command line, run:
 <output Surface Area value>
 ```
 
-The test.py file can be used to see how the package's functions can be imported and called upon.
+### Interactive Script and Example Usage
 
-To run the test file on the command line, from the /Foo root directory, run:
-``` python .\test.py ```
+See the ./scripts folder for examples how the package's functions can be imported and called upon.
+
+A interactive foo calculator can be  command line, from the /Foo root directory, run:
+``` python .\scripts\ineteractive_foo_calc.py ```
 
 ## References
 
