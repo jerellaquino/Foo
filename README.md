@@ -20,9 +20,11 @@ From the command line, run:
 3. In a new terminal window, run:
 
 ```bash
-> python
-> foo.sphereVolume(<test radius integer>)
-<output volume>
+>>> python
+>>> foo.sphereVolume(<test radius integer>)
+<output volume value>
+>>> foo.sphereSA(<test radius integer>)
+<output Surface Area value>
 ```
 
 The test.py file can be used to see how the package's functions can be imported and called upon.
