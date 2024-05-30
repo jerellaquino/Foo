@@ -32,4 +32,4 @@ To run the test file on the command line, from the /Foo root directory, run:
 
 ## References
 
-As a refresher for how python packages are built, [this tutorial link](https://www.tutorialspoint.com/python/python_packages.html) was used and can be used whenever developers want to add new science features.
+As a refresher for how python packages are built, [this tutorial link](https://www.tutorialspoint.com/python/python_packages.htm) was used and can be used whenever developers want to add new science features.
