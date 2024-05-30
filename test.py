@@ -1,5 +1,8 @@
-# write tests for foo calc functions
+# Examples of how to test importing functions and using them
+# tests for foo calc functions
 
-from foo import sphereVolume
+from foo import sphereVolume, sphereSA
 
-print("test sphereVolume: radius = 1, expected value: 4.19\n    result:",  sphereVolume(1))
+print("test sphereVolume: radius = 2\n    result:",  sphereVolume(2))
+
+print("test sphereSA: radius = 2\n    result:",  sphereSA(2))

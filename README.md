@@ -7,7 +7,7 @@ Python package for Foo et al physics calculations.
 - Python3
 - pip3
 
-Refer to [this documentation](https://packaging.python.org/en/latest/tutorials/installing-packages/) on how to install
+Refer to [this documentation](https://packaging.python.org/en/latest/tutorials/installing-packages/) on how to install them.
 
 ## Usage
 
@@ -19,11 +19,16 @@ From the command line, run:
   This builds the package on your machine
 3. In a new terminal window, run:
 
-```python
+```bash
 > python
 > foo.sphereVolume(<test radius integer>)
 <output volume>
 ```
+
+The test.py file can be used to see how the package's functions can be imported and called upon.
+
+To run the test file on the command line, from the /Foo root directory, run:
+``` python .\test.py ```
 
 ## References
 
