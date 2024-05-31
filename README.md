@@ -16,9 +16,7 @@ From the command line, run:
 
 1. clone repo
 2. from ```/Foo/foo_package``` directory run:
-  ``` pip3 install . ```
-  This builds the package into your Python environment.
-
+  ``` pip3 install . ``` which builds the package.
 3. See the section below for use cases.
 
 ### Interactive Script and Example Usage
@@ -29,7 +27,7 @@ One script provided  is an interactive foo calculator can be ran command line.
 To use this interactive calculator script, from the /Foo directory of this repo, run:
 ``` python3 .\scripts\ineteractive_foo_calc.py ```
 
-### Important *Note on usage*
+## IMPORTANT *Note on usage*
 
 The ./scripts and the ./tests files have lines of code at the top for the file that say:
 
@@ -43,23 +41,36 @@ sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 which are there to mimick the behavior of when script is being run in the proper package context. Those lines  ensure that the script can locate the parent package directory to import the modules correctly.
 
-To use foo package in a proper package context, you would need to modify the sys.path to be similar to above by doing: 
+To use foo package in a proper package context, you would need to modify the sys.path to be similar to above by doing:
+
 ```python
 import sys
 import os
 
-# Absolute path to the package directory
-foo_package_dir = "/path/to/foo_package"
+# add the ABSOLUTE path of the package to the package directory in sys.path
+sys.path.append("/path/to/foo_package")
 
-# Add the package directory to sys.path
-sys.path.append(foo_package_dir)
+# now you can use the foo package modules like so
+from foo import sphereVolume
 ```
 
-OR and easier way is to add the foo package directory to your PYTHONPATH. If using Windows, use the Windows Path variable from the Windows GUI (My Computer > Properties > Advanced System Settings > Environment Variables) and add your path to foo_package. If Linux, use:
+OR another way to quickly use the functions is to add the foo package directory to your PYTHONPATH. If using Windows, add/edi the System Variable PYTHONPATH from the Windows GUI (My Computer > Properties > Advanced System Settings > Environment Variables) and set it to your path to foo_package. If Linux, use the bash command:
+
 ```bash
 PYTHONPATH=/path/to/foo_package:$PYTHONPATH
 ```
 
+Once it's added you can call from the Pythson shell like so:
+
+```bash
+> python3
+Python 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import foo
+>>> foo.sphereVolume(2)
+33.510321638291124
+>>>
+```
 
 See [this article](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3) for more info on the relative pathing.
 
@@ -81,3 +92,5 @@ As a refresher for how python packages are built, [this tutorial link](https://w
 For the interactive calculaor script, [this article](https://www.geeksforgeeks.org/make-simple-calculator-using-python/) was used for inspiration.
 
 The unit testing reference used for the basics was [here](https://realpython.com/python-testing/).
+
+[This post](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3) relative paths for referencing the package in scripts was helpful for understanding why you can't just import from scripts within the package.
