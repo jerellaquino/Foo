@@ -54,13 +54,13 @@ sys.path.append("/path/to/foo_package")
 from foo import sphereVolume
 ```
 
-OR another way to quickly use the functions is to add the foo package directory to your PYTHONPATH. If using Windows, add/edi the System Variable PYTHONPATH from the Windows GUI (My Computer > Properties > Advanced System Settings > Environment Variables) and set it to your path to foo_package. If Linux, use the bash command:
+OR another way to quickly use the functions is to add the foo package directory to your PYTHONPATH. If using Windows, add/edi the System Variable PYTHONPATH from the Windows GUI (My Computer > Properties > Advanced System Settings > Environment Variables) and set it to your path to foo_package. If using Linux, use the bash command:
 
 ```bash
 PYTHONPATH=/path/to/foo_package:$PYTHONPATH
 ```
 
-Once it's added you can call from the Pythson shell like so:
+Once it's added, you can call from the Python shell like so:
 
 ```bash
 > python3
