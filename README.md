@@ -93,4 +93,4 @@ For the interactive calculaor script, [this article](https://www.geeksforgeeks.o
 
 The unit testing reference used for the basics was [here](https://realpython.com/python-testing/).
 
-[This post](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3) relative paths for referencing the package in scripts was helpful for understanding why you can't just import from scripts within the package.
+[This post](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3) about relative paths for referencing the package in scripts was helpful for understanding why you can't just import from scripts within the package.
